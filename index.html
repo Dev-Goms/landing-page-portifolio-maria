@@ -10,28 +10,92 @@
 
     <style>
         body {
-    margin-left: 15%;
-    margin-right: 15%;
-}
+            margin-left: 15%;
+            margin-right: 15%;
+        }
 
-.container {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-}
+        .container {
+            display: grid;
+            grid-auto-flow: column;
+            grid-auto-columns: 1fr;
+        }
 
-#header {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 42px;
-    text-decoration: underline;
+        #header {
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            text-decoration: underline;
 
-    color: #070F18;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
+            color: #070F18;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        #menu {
+            text-align: right;
+            margin-top: 49px;
+        }
+
+        #menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #menu li {
+			display: inline-block;
+            margin-left: 20px;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            /*identical to box height*/
+
+            text-align: center;
+
+            color: #070F18;
+		}
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        #headerTxt h1 {
+            font-family: Poppins;
+            font-size: 55px;
+            font-weight: 700;
+            line-height: 83px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        #headerTxt p {
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        #headerBtn {
+            background-color: #1F7CFF;
+            border-style: none;
+            border-radius: 50px;
+            color: #FFFFFF;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding: 12px 30px 12px 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -39,7 +103,26 @@
         <div id="header">
             Protifólio
         </div>
-        <div id="menu"></div>
+        <div id="menu">
+            <ul>
+                <li>Meus serviços</li>
+                <li>Fale comigo</li>
+                <li>Portifólio</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div id="headerTxt">
+            <h1>
+                Olá, meu nome<br> 
+                é Maria
+            </h1>
+            <p>
+                Sou programadora e gostaria de apresentar meu<br> 
+                trabalho através desse portifólio.</p>
+            <a id="headerBtn" href="">Meus Serviços</a>
+        </div>
+        <div id="ImageHeader"></div>
     </div>
 </body>
 </html>
